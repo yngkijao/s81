@@ -1,0 +1,184 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #4CAF50;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar li a:hover {
+    background-color: #45a049;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.resource-card, .category-card, .about-card, .contact-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+    text-align: center;
+    width: 45%;
+}
+
+.resource-card:hover, .category-card:hover, .about-card:hover, .contact-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.resource-card img, .category-card img, .about-card img, .contact-card img {
+    width: 100%;
+    height: 200px; /* Ensuring consistent height */
+    object-fit: cover; /* Keeps image ratio while fitting the container */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.resource-card h3, .category-card h3, .about-card h2, .contact-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.resource-card p, .category-card p, .about-card p, .contact-card p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.explore-btn, .discover-btn, .learn-more-btn, .send-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.explore-btn:hover, .discover-btn:hover, .learn-more-btn:hover, .send-btn:hover {
+    background-color: #45a049;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        float: none;
+        width: 100%;
+    }
+
+    .navbar li a {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .resource-card, .category-card, .about-card, .contact-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+}

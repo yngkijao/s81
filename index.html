@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resource Hub</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#about-contact">About & Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>Welcome to the Educational Resource Hub</h1>
+        <p>Your one-stop destination for learning materials.</p>
+    </section>
+   <section id="resources"> 
+        <h2>Resources</h2> 
+        <div class="flex-container"> 
+            <div class="resource-card"> 
+                <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/All_You_Need_to_Know_About_MERN_Stack.jpg" alt="MERN Web Development"> 
+                <h3>MERN Web Development</h3> 
+                <p>This resource aims to guide beginners to create their own website.</p> 
+                <button class="explore-btn">Explore</button> 
+            </div> 
+            <div class="resource-card"> 
+                <img src="https://media.licdn.com/dms/image/C4E12AQFNxyDQ4Umxtg/article-cover_image-shrink_720_1280/0/1616615509496?e=2147483647&v=beta&t=XhFSCzEZVloiy_4w29SyMRZGpa-BbNtomVFVBvIOQ8A" alt="Project Management"> 
+                <h3>Project Management</h3> 
+                <p>This resource focuses on planning and organizing projects and resources.</p> 
+                <button class="discover-btn">Discover</button> 
+            </div> 
+        </div> 
+    </section>
+    <section id="categories">
+        <h2>Categories</h2>
+        <div class="center-content">
+            <div class="category-card">
+                <h3>Web Development</h3>
+                <p>Dive into HTML, CSS, JavaScript, and modern frameworks to build dynamic web applications.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <div class="category-card">
+                <h3>Project Management</h3>
+                <p>Master the art of planning, executing, and overseeing projects effectively with industry standards.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section id="about-contact" class="flex-container"> 
+        <div class="about-card"> 
+            <h2>About Us</h2>
+            <img src="https://www.middlemarketcenter.org/Media/Expert%20Perspectives%20Images/successfulbusinessteamwi_88818.jpg" alt="Contact Us"> 
+            <p>Accessible, high-quality education on the palm of your hands.</p> 
+        </div> 
+        <div class="contact-card"> 
+            <h2>Contact Us</h2> 
+            <form> 
+                <label for="name">Name:</label> 
+                <input type="text" id="name" name="name" placeholder="Your Name"> 
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" placeholder="name@example.com"> 
+                <label for="message">Message:</label> 
+                <textarea id="message" name="message" placeholder="Your Message"></textarea> 
+                <button type="submit" class="send-btn">Send</button> 
+            </form> 
+        </div> 
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
